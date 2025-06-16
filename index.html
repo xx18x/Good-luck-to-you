@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOOᗪ ᒪᑌᑕK TO YOᑌ </title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="GoodFortune - Musab Khalaf Portfolio" />
+  <meta property="og:description" content="Official portfolio of Musab Khalaf. Web developer & designer." />
+  <meta property="og:image" content="https://i.imgur.com/WNUJKzm.png" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GoodFortune - Musab Khalaf Portfolio" />
+  <meta name="twitter:description" content="Official portfolio of Musab Khalaf. Web developer & designer." />
+  <meta name="twitter:image" content="https://i.imgur.com/WNUJKzm.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f1113;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      gap: 10px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #33aaff;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    .subscribe-btn {
+      background-color: #33aaff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 5%;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      color: #33aaff;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .hero-text h1 span {
+      color: #33aaff;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .hero-text p span {
+      color: #33aaff;
+      font-weight: bold;
+    }
+
+    .cv-btn {
+      background-color: #33aaff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero-image {
+      position: relative;
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 350px;
+      z-index: 3;
+      position: relative;
+    }
+
+    .blue-bg {
+      position: absolute;
+      background-color: #33aaff;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+      }
+
+      .hero-image .blue-bg {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+
+      .subscribe-btn, .cv-btn {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Good<span>Fortune</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Services</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact Me</a>
+    </nav>
+    <a href="#" class="subscribe-btn">Subscribe</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>My name is</h2>
+      <h1>Musab<span>Khalaf</span></h1>
+      <p>I'm a <span>Musab-Khalaf</span> Developer</p>
+      <a class="cv-btn" href="#">Download CV</a>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-circle"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="blue-bg"></div>
+      <img src="https://i.imgur.com/WNUJKzm.png" alt="Profile">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 - Designed by Musab-Khalaf | <a href="https://mostaql.com" style="color: #777;">mostaql.com</a>
+  </footer>
+
+</body>
+</html>
